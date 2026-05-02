@@ -19,7 +19,7 @@ function App() {
     setMessages(prev => [...prev, userMessage]);
     setLoading(true);
 
-    const res = await fetch("http://localhost:3000/chat", {
+    const res = await fetch("https://mind-mastery-ai.onrender.com/chat", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
